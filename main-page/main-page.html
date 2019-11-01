@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Album example · Bootstrap</title>
+    <title>ИдуБегуЕду</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
     <!-- Bootstrap core CSS -->
@@ -20,6 +20,8 @@
 
 </head>
 <body>
+
+
 <header>
     <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
@@ -50,7 +52,7 @@
                     <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
                     <circle cx="12" cy="13" r="4"/>
                 </svg>
-                <strong>Album</strong>
+                <strong></strong>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
                     aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +65,17 @@
 <main role="main">
    <div class="container marketing">
 
+       <div class="item featurette">
+           <div class="col-10">
+               <h2 class="featurette-heading">
+                   Турагенство ИдуБегуЕду
+               </h2>
+               <p class="lead">
+                   Найдем тур в любую часть света.
+               </p>
+           </div>
 
+       </div>
         <!-- START THE FEATURETTES -->
 
         <hr class="featurette-divider">
@@ -79,18 +91,18 @@
                 </p>
             </div>
             <div class="col-lg-6 col-xs-12">
-
-                <img src="../images/maldives.png" height="350" width="550"/>
+                <img src="../images/maldives.png" class="img-fluid"/>
             </div>
         </div>
-       <button type="button" class="btn btn-primary btn-lg btn-block">Хочу!</button>
+
+            <button type="button" class="button btn-teal btn-lg btn-block">Хочу!</button>
 
         <hr class="featurette-divider">
 
         <div class="featurette item">
 
             <div class="col-lg-6  col-xs-12">
-                    <img src="../images/crimea.jpg" height="350" width="550"/>
+                    <img src="../images/crimea.jpg" class="img-fluid"/>
             </div>
             <div class="col-lg-5  col-xs-12">
                 <h2 class="featurette-heading">
@@ -101,30 +113,31 @@
                 </p>
             </div>
         </div>
-       <button type="button" class="btn btn-primary btn-lg btn-block">Хочу!</button>
+       <button type="button" class="button btn-ocher btn-lg btn-block">Хочу!</button>
 
         <hr class="featurette-divider">
 
-        <div class="featurette item">
-            <div class="col-md-5 col-xs-12">
-                <h2 class="featurette-heading">
-                    Альпы. И ничего кроме.
-                </h2>
-                <p class="lead">
-                    Мы готовы предложить отель высоко в горах, где вы будете просыпаться и засыпать, опьяненные воздухом.
-                    А местные горнолыжные трассы готовы встретить спортсменов разного уровня.
-                </p>
-            </div>
-            <div class="col-md-6 col-xs-12">
+       <div class="featurette item">
+           <div class="col-md-5 col-xs-12">
+               <h2 class="featurette-heading">Прованс</h2>
+               <p class="lead">
+                   Сезонный тур познакомит вас с цветением лавандовых полей. В программу включено недельное путешествие,
+                   фотосессия на цветочной ферме, упоение запахами и сувенир в виде охапки лаванды.
+               </p>
+           </div>
+           <div class="col-md-6 col-xs-12">
 
-                <img src="../images/mountain.png" height="350" width="550"/></div>
-        </div>
-       <button type="button" class="btn btn-primary btn-lg btn-block">Хочу!</button>
+               <img src="../images/provence.png" class="img-fluid"/></div>
+       </div>
+       <button type="button" class="button btn-vlt btn-lg btn-block">Хочу!</button>
+
+
+       <hr class="featurette-divider">
+
 
         <hr class="featurette-divider">
         <div class="featurette item">
             <div class="col-md-6 col-xs-12">
-
                 <img src="../images/mountainlake.png" height="350" width="550"/></div>
             <div class="col-md-5 col-xs-12">
                 <h2 class="featurette-heading">
@@ -137,23 +150,7 @@
             </div>
 
         </div>
-       <button type="button" class="btn btn-primary btn-lg btn-block">Хочу!</button>
-
-        <hr class="featurette-divider">
-        <div class="featurette item">
-            <div class="col-md-5 col-xs-12">
-                <h2 class="featurette-heading">Прованс</h2>
-                <p class="lead">
-                    Сезонный тур познакомит вас с цветением лавандовых полей. В программу включено недельное путешествие,
-                    фотосессия на цветочной ферме, упоение запахами и сувенир в виде охапки лаванды.
-                </p>
-            </div>
-            <div class="col-md-6 col-xs-12">
-
-                <img src="../images/provence.png" height="350" width="550"/></div>
-        </div>
-       <button type="button" class="btn btn-primary btn-lg btn-block">Хочу!</button>
-
+       <button type="button" class="button btn-bl btn-lg btn-block">Хочу!</button>
 
         <hr class="featurette-divider">
 
@@ -169,9 +166,6 @@
         <p class="float-right">
             <a href="#">Back to top</a>
         </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a
-                href="/docs/4.3/getting-started/introduction/">getting started guide</a>.</p>
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
