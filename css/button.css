@@ -1,0 +1,23 @@
+.button {
+    border-width: 0;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.btn-teal {
+    background-color: teal;
+}
+
+.btn-ocher {
+    background-color: #5a4030;
+}
+.btn-dbr {
+    background-color: #342b2c;
+}
+.btn-vlt{
+    background-color: #4d3858;
+}
+
+.btn-bl {
+    background-color: #1e5d64;
+}

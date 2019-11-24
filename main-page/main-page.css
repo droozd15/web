@@ -20,6 +20,9 @@
 .featurette-divider {
     margin: 5rem 0;
 }
+.header-mrg {
+    margin-bottom: 30px;
+}
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
