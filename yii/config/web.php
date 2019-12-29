@@ -14,6 +14,10 @@ $config = [
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+            'parsers' => [
+                'application/json'=>'yii\web\JsonParser',
+                'multipart/form-data' => 'yii\web\MultipartFormDataParser'
+            ],
             'cookieValidationKey' => 'nfyL2f02rUU4-0w_wAnU6BbPbH2Ukxte',
         ],
         'cache' => [
@@ -49,6 +53,9 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 'POST api/<controller>/registry' => 'api/<controller>/registry',
+
+                'POST api/<controller>/record' => 'api/<controller>/record',
+                'GET api/description/<tourId:\d+>' => 'api/description/index',
                 'GET api/<controller>/<id:\d+>' => 'api/<controller>/view',
 
                 'api/<controller>/<action>' => 'api/<controller>/<action>'
