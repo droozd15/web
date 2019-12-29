@@ -19,19 +19,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/news',
-    name: 'news',
-    component: () => import('../views/News')
-  },
-  {
     path: '/news/:id',
     name: 'article',
     component: () => import('../views/Article.vue')
   },
   {
-    path: '/cart',
+    path: '/cart/:id',
     name: 'cart',
-    component: () => import('../views/Cart.vue')
+    component: () => import('../views/Record.vue')
   },
   {
     path: '/tours',
@@ -39,10 +34,10 @@ const routes = [
     component: () => import('../views/Tours.vue')
   },
   {
-    path: '/contact',
-    name: 'contact',
-    component: () => import('../views/Contact.vue')
-  }
+    path: '/tours/:id',
+    name: 'description',
+    component: () => import('../views/Description.vue')
+  },
 ]
 
 const router = new VueRouter({

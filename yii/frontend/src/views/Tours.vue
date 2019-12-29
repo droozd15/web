@@ -1,106 +1,37 @@
 <template>
+    <main role="main">
     <div class="container marketing">
 
-        <div class="item featurette">
-            <div class="col-10">
-                <h2 class="featurette-heading">
-                    Турагенство ИдуБегуЕду
-                </h2>
-                <p class="lead">
-                    Найдем тур в любую часть света.
-                </p>
+        <div v-for = "item in models" :key="item.id">
+            <hr class="featurette-divider">
+
+            <div class="featurette item">
+
+                <div class="col-lg-6 col-xs-12">
+                    <div v-if="item.image">
+                        <img :src="item.image" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-5  col-xs-12">
+                    <h2 class="featurette-heading">
+                        {{item.title}}
+                    </h2>
+                    <p class="lead">
+                        {{item.text}}
+                    </p>
+                </div>
             </div>
+
+                <button type="button" class="button btn-bl btn-lg btn-block">
+                    <router-link :to="{name: 'description', params: {id: item.id}}">
+                        <p class="text">Хочу!</p>
+                    </router-link>
+                </button>
 
         </div>
-
-
-        <hr class="featurette-divider">
-
-        <div class="item featurette">
-            <div class="col-lg-5 col-xs-12">
-                <h2 class="featurette-heading">
-                    Отдых на берегу океана
-                </h2>
-                <p class="lead">
-                    Путешествие на Мальдивы - это возможность оказаться на белоснежных пляжах, окунуться в Индийский
-                    океан,
-                    увидеть подводный мир, богатый коралловыми рифами, морскими обитателями.
-                </p>
-            </div>
-            <div class="col-lg-6 col-xs-12">
-<!--                <img src="../images/maldives.png" class="img-fluid"/>-->
-            </div>
-        </div>
-        <a href="../maldives/maldives.html">
-            <button type="button" class="button btn-teal btn-lg btn-block">Хочу!</button>
-        </a>
-        <hr class="featurette-divider">
-
-        <div class="featurette item">
-
-            <div class="col-lg-6  col-xs-12">
-<!--                <img src="../images/crimea.jpg" class="img-fluid"/>-->
-            </div>
-            <div class="col-lg-5  col-xs-12">
-                <h2 class="featurette-heading">
-                    А может быть, вам по душе дикая крымская природа?
-                </h2>
-                <p class="lead">
-                    Севастополь, Балаклава, Тарханкут ждут туристов, готовых к раскаленному воздуху, долгим переходам и
-                    атмосфере, застывшей между прошлым и настоящим.
-                </p>
-            </div>
-        </div>
-        <a href="../crimea/crimea.html">
-            <button type="button" class="button btn-ocher btn-lg btn-block">Хочу!</button>
-        </a>
-        <hr class="featurette-divider">
-
-        <div class="featurette item">
-            <div class="col-md-5 col-xs-12">
-                <h2 class="featurette-heading">Прованс</h2>
-                <p class="lead">
-                    Сезонный тур познакомит вас с цветением лавандовых полей. В программу включено недельное
-                    путешествие,
-                    фотосессия на цветочной ферме, упоение запахами и сувенир в виде охапки лаванды.
-                </p>
-            </div>
-            <div class="col-md-6 col-xs-12">
-
-<!--                <img src="../images/provence.png" class="img-fluid"/>-->
-            </div>
-        </div>
-        <a href="../provence/provence.html">
-            <button type="button" class="button btn-vlt btn-lg btn-block">Хочу!</button>
-        </a>
-
-        <hr class="featurette-divider">
-
-
-        <hr class="featurette-divider">
-        <div class="featurette item">
-            <div class="col-md-6 col-xs-12">
-<!--                <img src="../images/mountainlake.png" height="350" width="550"/>-->
-            </div>
-            <div class="col-md-5 col-xs-12">
-                <h2 class="featurette-heading">
-                    Великие озера Канады
-                </h2>
-                <p class="lead">
-                    Канаду принято называть страной тысячи озер, хотя на самом деле их миллионы.
-                    Попробуйте исследовать хотя бы часть из них, чтобы затем снова захотеть сюда вернуться.
-                </p>
-            </div>
-
-        </div>
-        <a href="../mountain/mountain.html">
-            <button type="button" class="button btn-bl btn-lg btn-block">Хочу!</button>
-        </a>
-        <hr class="featurette-divider">
-
     </div>
 
-
+    </main>
 </template>
 
 <script>
@@ -187,5 +118,9 @@
 
     .btn-bl {
         background-color: #1e5d64;
+    }
+    .text {
+        margin:0;
+        color: #fff;
     }
 </style>

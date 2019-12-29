@@ -1,16 +1,19 @@
 <template>
+
   <div id="app">
 
     <header>
-      шапка
-      <div id ="nav">
-        <router-link to="/">Главная</router-link>
-        |
-        <router-link to="/about">о нас</router-link>
-        |
-        <router-link to="/news">Новости</router-link>
-        |
-        <router-link to="/login">Авторизация</router-link>
+
+      <div class="card text-white bg-dark mb-3">
+
+        <div class="card-body col-6">
+          <h2 class="featurette-heading">
+            Турагенство ИдуБегуЕду
+          </h2>
+          <p class="lead">
+            Найдем тур в любую часть света.
+          </p>
+        </div>
       </div>
     </header>
     <main>
